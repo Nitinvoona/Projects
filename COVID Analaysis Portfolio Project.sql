@@ -12,7 +12,7 @@ WHERE continent IS NOT NULL
 ORDER BY 1,2
 
 -- Total Cases vs Total Deaths
--- Likelihood of dying if you contract covid in your country
+-- Likelihood of dying if you contact covid in your country
 
 SELECT location,date,total_cases,total_deaths,(total_deaths/total_cases)*100 AS DeathPerc
 FROM [Portfolio Project]..CovidDeaths
